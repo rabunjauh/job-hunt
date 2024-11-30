@@ -229,7 +229,7 @@ const DetailCompanyPage: FC<DetailCompanyPageProps> = async ({ params }) => {
             <div className="my-16">
               <div className="text-3xl font-semibold mb-4">Teams</div>
               <div className="grid grid-cols-5 gap-5 mt-5">
-                {data.CompanyTeam.map((data: CompanyTeam) => (
+                {data.CompanyTeam?.map((data: CompanyTeam) => (
                   <div key={data.id} className="border border-border px-3 py-5">
                     <div className="w-16 h-16 rounded-full mx-auto bg-gray-300" />
 
