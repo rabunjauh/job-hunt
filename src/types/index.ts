@@ -54,7 +54,7 @@ export type CompanySocmedType = {
 
 export type CompanyType = {
   id: string;
-  image: string;
+  image: string | undefined;
   name: string;
   totalJobs: number;
   description: string;
