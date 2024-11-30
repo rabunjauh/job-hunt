@@ -1,0 +1,18 @@
+https://ui.shadcn.com/
+https://www.npmjs.com/package/react-icons
+https://www.prisma.io/
+https://www.prisma.io/docs/orm/prisma-client
+setting POSTGRES_PRISMA_URL di .env
+buat schema.prisma
+lalu run npx prisma db pull
+npx prisma generate
+
+https://supabase.com/
+https://next-auth.js.org/
+https://www.npmjs.com/package/bcryptjs
+npm i bcryptjs
+npm i --save-dev @types/bcryptjs
+
+https://swr.vercel.app/
+
+https://day.js.org/
