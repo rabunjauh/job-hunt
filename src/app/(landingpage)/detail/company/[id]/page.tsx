@@ -44,8 +44,6 @@ async function getDetailCompany(id: string) {
     },
   });
 
-  console.log(data);
-
   let imageUrl;
 
   if (data?.Companyoverview[0].image) {

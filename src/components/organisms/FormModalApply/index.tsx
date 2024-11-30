@@ -52,7 +52,6 @@ const FormModalApply: FC<FormModalApplyProps> = ({
   const { data: session } = useSession();
 
   const onSubmit = async (val: z.infer<typeof formApplySchema>) => {
-    console.log(val);
     try {
       const { filename, error } = await supabaseUploadFile(
         val.resume,

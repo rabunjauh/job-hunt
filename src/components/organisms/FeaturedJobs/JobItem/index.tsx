@@ -15,7 +15,6 @@ const JobItem: FC<JobItemProps> = ({
   type,
   skills,
 }) => {
-  // console.log("category:", category);
   return (
     <div className="border border-border p-6 cursor-pointer">
       <div className="flex flex-row justify-between items-start">
