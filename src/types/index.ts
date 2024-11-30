@@ -16,7 +16,7 @@ export type JobType = {
   needs: number;
   applicants: number;
   skills: string[];
-  image: string;
+  image: string | undefined;
   jobType: string;
   name: string;
   type: string;
