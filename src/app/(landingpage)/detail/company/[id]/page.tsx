@@ -223,38 +223,41 @@ const DetailCompanyPage: FC<DetailCompanyPageProps> = async ({ params }) => {
               </div>
             </div>
           </div>
-          {/* {data.CompanyTeam && ( */}
-          <div className="px-32">
-            <Separator />
-            <div className="my-16">
-              <div className="text-3xl font-semibold mb-4">Teams</div>
-              <div className="grid grid-cols-5 gap-5 mt-5">
-                {data.CompanyTeam?.map((data: CompanyTeam) => (
-                  <div key={data.id} className="border border-border px-3 py-5">
-                    <div className="w-16 h-16 rounded-full mx-auto bg-gray-300" />
+          {data.CompanyTeam && (
+            <div className="px-32">
+              <Separator />
+              <div className="my-16">
+                <div className="text-3xl font-semibold mb-4">Teams</div>
+                <div className="grid grid-cols-5 gap-5 mt-5">
+                  {data.CompanyTeam.map((data: CompanyTeam) => (
+                    <div
+                      key={data.id}
+                      className="border border-border px-3 py-5"
+                    >
+                      <div className="w-16 h-16 rounded-full mx-auto bg-gray-300" />
 
-                    <div className="text-center my-4">
-                      <div className="font-semibold text-sm">{data.name}</div>
-                      <div className="text-gray-500 text-xs">
-                        {data.position}
+                      <div className="text-center my-4">
+                        <div className="font-semibold text-sm">{data.name}</div>
+                        <div className="text-gray-500 text-xs">
+                          {data.position}
+                        </div>
+                        <div className="font-semibold text-sm">Hariyanto</div>
+                        <div className="text-gray-500 text-xs">CEO</div>
                       </div>
-                      <div className="font-semibold text-sm">Hariyanto</div>
-                      <div className="text-gray-500 text-xs">CEO</div>
-                    </div>
 
-                    <div className="mx-auto w-max">
-                      <div className="inline-flex gap-2">
-                        <InstagramIcon className="w-4 h-4 text-gray-500" />
-                        <LinkedinIcon className="w-4 h-4 text-gray-500" />
+                      <div className="mx-auto w-max">
+                        <div className="inline-flex gap-2">
+                          <InstagramIcon className="w-4 h-4 text-gray-500" />
+                          <LinkedinIcon className="w-4 h-4 text-gray-500" />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
+              <Separator />
             </div>
-            <Separator />
-          </div>
-          {/* )} */}
+          )}
         </>
       )}
       <div className="px-32">
